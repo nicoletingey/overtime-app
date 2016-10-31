@@ -10,8 +10,8 @@ describe 'navigate' do
     before do
       visit posts_path
     end
-  	
-    it 'can be reached successfully' do
+
+  	it 'can be reached successfully' do
   		expect(page.status_code).to eq(200)
   	end
 
@@ -27,12 +27,12 @@ describe 'navigate' do
     end
   end
 
-  describe 'new' do 
+  describe 'new' do
     it 'has a link from the homepage' do
-    visit root_path 
+      visit root_path
 
-    click_link("new_post_from_nav")
-    expect(page.status_code).to eq(200)
+      click_link("new_post_from_nav")
+      expect(page.status_code).to eq(200)
     end
   end
 
@@ -41,8 +41,8 @@ describe 'navigate' do
       @post = FactoryGirl.create(:post)
       visit posts_path
 
-    click_link("delete_post_#{@post.id}_from_index")
-    expect(page.status_code).to eq(200)
+      click_link("delete_post_#{@post.id}_from_index")
+      expect(page.status_code).to eq(200)
     end
   end
 
@@ -72,17 +72,18 @@ describe 'navigate' do
     end
   end
 
-  describe 'edit' do 
+  describe 'edit' do
     before do
       @post = FactoryGirl.create(:post)
     end
-    
-    it 'can be reached by clicking edit on index page' do 
+
+    it 'can be reached by clicking edit on index page' do
       visit posts_path
 
       click_link("edit_#{@post.id}")
       expect(page.status_code).to eq(200)
     end
+
     it 'can be edited' do
       visit edit_post_path(@post)
 
@@ -94,5 +95,3 @@ describe 'navigate' do
     end
   end
 end
-
-
