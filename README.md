@@ -21,5 +21,6 @@
 - x Icons from Font Awesome
 - x Update the styles for forms
 
-## Refactor TODOS:
-- x Refactor posts/_form for admin user with status
+## TODOS:
+-Integrate validation for phone attr in User:
+	-
