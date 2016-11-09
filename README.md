@@ -17,3 +17,8 @@
 - Needs to be documented if employee did not log overtime
 
 ## TODOS:
+
+## heroku	https://git.heroku.com/overtime-01.git (fetch)
+heroku	https://git.heroku.com/overtime-01.git (push)
+origin	https://github.com/nicoletingey/overtime-app.git (fetch)
+origin	https://github.com/nicoletingey/overtime-app.git (push)
